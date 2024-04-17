@@ -6,6 +6,35 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "permissions": [
+      "SEND_SMS",
+      "READ_PHONE_STATE",
+      "CALL_PHONE",
+      "READ_CONTACTS",
+      "WRITE_CONTACTS",
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "READ_INTERNAL_STORAGE",
+      "WRITE_INTERNAL_STORAGE",
+      "CAMERA",
+      "RECORD_AUDIO",
+      "READ_CALENDAR",
+      "WRITE_CALENDAR",
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION",
+      "ACCESS_BACKGROUND_LOCATION",
+      "USE_FINGERPRINT",
+      "VIBRATE",
+      "GET_ACCOUNTS",
+      "USE_CREDENTIALS",
+      "INSTALL_SHORTCUT",
+      "UNINSTALL_SHORTCUT",
+      "MANAGE_DOCUMENTS",
+      "ACCESS_NOTIFICATION_POLICY",
+      "ACCESS_MEDIA_LOCATION",
+      "ACTIVITY_RECOGNITION",
+      "SYSTEM_ALERT_WINDOW"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -15,7 +44,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Se requiere acceso a la cámara para tomar fotos",
+        "NSPhotoLibraryUsageDescription": "Se requiere acceso a la galería para seleccionar fotos",
+        "NSContactsUsageDescription": "Se requiere acceso a los contactos para invitar a amigos",
+        "NSCalendarsUsageDescription": "Se requiere acceso al calendario para programar eventos"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,5 +60,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
+   }
   }
 }
